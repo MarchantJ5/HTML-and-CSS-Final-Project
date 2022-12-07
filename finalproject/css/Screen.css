@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+body{
+font-family: 'Times New Roman', Times, serif;
+}
+h1{
+font-size: 3em;
+font-weight: bold;
+color: yellow;
+text-shadow: 2px 2px red;
+width: 100%;
+text-align: center;
+}
+h2{
+font-size: 2.5em;
+font-weight: bold;
+color: yellow;
+text-shadow: 2px 2px red;
+}
+h3{
+  font-size: 2em;
+  font-weight: bold;
+  color: yellow;
+  text-align: center;
+  text-shadow: 2px 2px red;
+}
+h4{
+  font-size: 1.5em;
+  font-weight: bold;
+  color: yellow;
+  text-align: center;
+  text-shadow: 2px 2px red;
+}
+p{
+    font-size: 2em;
+    color: yellow;
+    text-align: center;
+    text-shadow: 2px 2px red;
+    
+}
+nav {
+    margin-left: 40px;
+    margin-top: 0px;
+    width: fit-content;
+}
+.mainmenu, .submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+.mainmenu a {
+    display: block;
+    background-color: yellow;
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+  }
+.mainmenu a:hover {
+      background-color: #E94210;
+  }
+  .mainmenu a:visited{
+    color: blue;
+  }
+.mainmenu li:hover .submenu {
+    display: block;
+    max-height: 200px;
+  }
+.submenu a {
+    background-color: darkgoldenrod;
+  }
+.submenu a:hover {
+    background-color: #E94210;
+  }
+  .submenu a:visited{
+    color: blue;
+  }
+.submenu {
+    overflow: hidden;
+    max-height: 0;
+  }
+aside{
+    float: right;
+}
+footer{
+  color: yellow;
+}
+.title{ grid-area:h; }
+.menu{ grid-area:n; }
+.content{ grid-area:m; }
+.right{ grid-area:a; }
+.contact{ grid-area:f; }
+
+/* For mobile phones: */
+.grid-container{
+	display:grid;
+	grid-template-areas:
+		' h h h'
+		'n n n'
+		'm m a'
+		'f f f';
+	grid-gap:0px;
+	padding:4px;
+
+}
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+.grid-container{
+	display:grid;
+	grid-template-areas:
+		' h h h'
+		'm m n'
+		'm m a'
+		'f f f';
+	grid-gap:0px;
+	padding:5px;
+
+}
+}
+
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+.grid-container{
+	display:grid;
+	grid-template-areas:
+		' h h h h h h  '
+		'n m m m m a'
+		'f f f f f f';
+	grid-gap:0px;
+	padding:10px;
+}
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 201px;
+}
+.icon-bar {
+    width: 100%;
+    background-color: yellow;
+    overflow: auto;
+}
+
+.icon-bar a {
+    float: left;
+    text-align: center;
+    width: 20%;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+}
+
+.icon-bar a:hover {
+    background-color: #E94210;
+}
+@keyframes Advert {
+  0% {
+      transform: rotate(20deg);
+  }
+
+  33% {
+      transform: rotate(-20deg);
+  }
+
+  66% {
+      transform: rotate(10deg);
+  }
+
+  100% {
+      transform: rotate(-10deg);
+  }
+}

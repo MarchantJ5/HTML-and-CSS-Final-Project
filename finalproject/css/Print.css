@@ -1,0 +1,42 @@
+p, h1, h2, h3, h4, div, .mainmenu, .submenu, footer, aside{
+    width:100%;
+    font-size:12pt;
+    font-family:sans-serif;
+    background:lightgrey;
+    color:black;
+    text-align:left;
+    margin:0px;
+    padding:0px;
+    display:block;
+    top:0%;
+    height:auto;
+    opacity:1;
+    border:none;
+    text-shadow:none;
+    font-weight:normal;
+}
+aside, img, .icon-bar, script {
+    display:none;
+}
+.mainmenu, .submenu {
+    border:none;
+    margin:0px;
+    text-decoration:underline;
+    text-align: left;
+}
+header{
+    box-shadow:none;
+}
+.menu, .submenu a:visited a:hover a:active{
+    color:black;
+    text-shadow:none;
+    display:inline;
+    text-decoration:underline;
+}
+p{
+    margin-top:10px;
+}
+
+h1, h2, h3, h4{
+    margin-top:10px;
+}
